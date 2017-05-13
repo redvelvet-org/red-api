@@ -1,6 +1,6 @@
 ## redapi
 
-[![Build Status](https://travis-ci.org/AskNemo/redapi.svg?branch=develop)](https://travis-ci.org/AskNemo/redapi)
+[![Build Status](https://travis-ci.org/redvelvet-org/redapi.svg?branch=master)](https://travis-ci.org/redvelvet-org/redapi)
 
 
 An API Microservice built using [Hapi](https://hapijs.com/)
