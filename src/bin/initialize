@@ -1,8 +1,8 @@
 #!/bin/bash
 
 psql $DATABASE_INITIALIZATION_URI -v ON_ERROR_STOP=0 -t <<-EOSQL
-  CREATE USER redapi;
-  ALTER USER redapi WITH SUPERUSER;
+  CREATE USER redvelvet;
+  ALTER USER redvelvet WITH SUPERUSER;
 EOSQL
 
 psql $DATABASE_INITIALIZATION_URI -tc "SELECT 1 FROM pg_database WHERE datname = 'redapi_development'" | grep -q 1 || psql $DATABASE_INITIALIZATION_URI -c "CREATE DATABASE redapi_development"
